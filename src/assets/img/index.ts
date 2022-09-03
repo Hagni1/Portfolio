@@ -1,4 +1,4 @@
-import starlink from './starlink.png'
-import shop from './shop.png'
+import starlink from './starlink.webp'
+import shop from './shop.webp'
 
 export {starlink,shop} 
