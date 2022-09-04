@@ -76,7 +76,7 @@ const HamburgerMenu: React.FunctionComponent<P> = ({ onClick, isMenuOpen }) => {
   return (
     <>
       <Background isMenuOpen={isMenuOpen} onClick={() => onClick()} />
-      <HamburgerIcon onClick={() => onClick()}>
+      <HamburgerIcon aria-label='Mobile menu' onClick={() => onClick()}>
         <HamburgerIconBar bar={isMenuOpen ? "firstBar" : ""} />
         <HamburgerIconBar bar={isMenuOpen ? "middleBar" : ""} />
         <HamburgerIconBar bar={isMenuOpen ? "lastBar" : ""} />

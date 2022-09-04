@@ -147,10 +147,20 @@ const Navigation: React.FunctionComponent = () => {
             about Me
           </NavigationItem>
         </Link>
-        <NavigationItem>
-          <SVG type={SVG_TYPE.CONTACT} nav />
-          contact me
-        </NavigationItem>
+
+        <Link
+          to="contactMe"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={300}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <NavigationItem>
+            <SVG type={SVG_TYPE.CONTACT} nav />
+            contact me
+          </NavigationItem>
+        </Link>
       </NavigationList>
     </NavigationWrapper>
   );
