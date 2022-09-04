@@ -14,8 +14,6 @@ const ContactMeWrapper = styled.section`
   align-items: center;
   flex-direction: column;
   @media screen and (max-width: 765px) {
-    width: 100%;
-    align-items: center;
     gap: 50px;
   }
 `;
@@ -27,7 +25,8 @@ const SocialWrapper = styled.section`
   font-size: 24px;
   color: papayawhip;
   gap: 20px;
-  margin-top:50px;
+  margin-top: 50px;
+  max-width: 90%;
 `;
 
 const ContactMe = () => {

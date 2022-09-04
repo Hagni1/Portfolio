@@ -12,6 +12,16 @@ const SocialItemWrapper = styled.a`
   display: flex;
   position: relative;
   gap: 10px;
+  @media screen and (max-width: 560px) {
+    font-size: 20px;
+  }
+  p {
+    word-wrap: break-word;
+    @media screen and (max-width: 450px) {
+    width: 200px;
+  }
+  }
+
   ::after {
     content: "";
     position: absolute;
@@ -33,7 +43,7 @@ const SocialItem = ({ type, url, label }: P) => {
   return (
     <SocialItemWrapper href={url} target="_blank">
       <SVG type={type} />
-      {label}
+      <p>{label}</p>
     </SocialItemWrapper>
   );
 };
