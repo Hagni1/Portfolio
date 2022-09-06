@@ -11,7 +11,8 @@ const SVG_TYPE = {
   TYPESCRIPT: 'TYPESCRIPT',
   GITHUB: 'GITHUB',
   LINKEDIN: 'LINKEDIN',
-  MAIL: 'MAIL'
+  MAIL: 'MAIL',
+  SWIPE_UP: 'SWIPE_UP',
   };
   
   export default SVG_TYPE;

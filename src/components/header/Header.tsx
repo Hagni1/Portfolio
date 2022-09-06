@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
+import { SVG } from "../../shared";
+import SVG_TYPE from "../../shared/SVG/svgType";
 
 interface P {
   headerRef: any;
@@ -8,8 +10,10 @@ interface P {
 const HeaderWrapper = styled.header`
   min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  position:relative;
+  flex-direction:column;
   @media screen and (max-width: 765px) {
     justify-content: center;
   }
@@ -35,7 +39,7 @@ const FrontendDeveloper = styled.h3`
   opacity: 0;
   font-size: 24px;
   animation: fadein 2s;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   margin-top: 5px;
 `;
@@ -47,6 +51,7 @@ const Header = () => {
         <Hi>Hi, I'm Kamil Suchocki</Hi>
         <FrontendDeveloper>Frontend Developer</FrontendDeveloper>
       </HeaderContent>
+      <SVG type={SVG_TYPE.SWIPE_UP} swipe_up />
     </HeaderWrapper>
   );
 };

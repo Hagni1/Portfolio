@@ -8,9 +8,7 @@ interface P {
 }
 
 const SkillWrapper = styled.figure`
-  /* max-width: 300px; */
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: center;
   flex-direction: column;
   flex: 1 0 33%;
