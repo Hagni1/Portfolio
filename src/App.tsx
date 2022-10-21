@@ -1,5 +1,7 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import styled from "styled-components";
+import "react-toastify/dist/ReactToastify.css";
 import { Header, Navigation, Projects, AboutMe, ContactMe } from "./components";
 const AppWrapper = styled.div`
   display: flex;
@@ -14,6 +16,7 @@ function App() {
       <Projects />
       <AboutMe />
       <ContactMe />
+      <ToastContainer />
     </AppWrapper>
   );
 }
